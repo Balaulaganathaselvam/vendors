@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>CreateVendors</title>
+</head>
+<body>
+
+<form action="saveVen" method="post">
+<pre>
+Id: <input type="text"name="id"/>
+Code: <input type="text"name="code"/>
+Name: <input type="text"name="name"/>
+Type: Urban<input type="radio"name="type" value="URBAN"/>
+      Rural<input type="radio"name="type"value="RURAL"/>
+Email<input type="text"name="email"/>
+Phone<input type="text"name="phone"/>
+Address<input type="text"name="address"/>
+<input type="submit" value="save"/>
+</pre>
+</form>
+
+ <b th:text="${msg}"></b>
+ <a href="DisplayVendors">view</a>
+
+
+
+</body>
+</html>
